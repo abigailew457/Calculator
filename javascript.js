@@ -1,15 +1,4 @@
-function add(number) {
-    return number + number;
-};
-
-function subtract(number) {
-    return number - number;
-};
-
-function multiply(number) {
-    return number * number;
-}; 
-
-function divide(number) {
-    return number/number;
-};
+let add = (a,b) => a + b;
+let sub = (a,b) => a - b;
+let multiply = (a,b) => a*b;
+let divide = (a,b) => a/b;
