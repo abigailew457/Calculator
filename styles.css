@@ -24,6 +24,7 @@ button {
     height: 100px;
     padding: 0px;
     border-radius: 50px;
+    font-size: xx-large;
 }
 
 .display {
@@ -33,6 +34,9 @@ button {
     border: solid #F3DAF7 50px;
     border-bottom: solid #F3DAF7 10px;
     border-radius: 75px;
+    font-size: xxx-large;
+    text-align: center;
+    justify-content: flex-end;
 }
 
 .fourth {
