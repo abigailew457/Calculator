@@ -12,6 +12,8 @@ div {
     flex-direction: row;
     justify-content: center;
     margin: auto;
+    border-left: solid pink 50px;
+    border-right: solid pink 50px;
 }
 
 button {
@@ -24,5 +26,10 @@ button {
     align-self: center;
     width: 400px;
     height: 100px;
-    border: solid pink 2px;
+    border: solid pink 50px;
+    border-bottom: 0px;
+}
+
+.fourth {
+    border-bottom: solid pink 50px;
 }
