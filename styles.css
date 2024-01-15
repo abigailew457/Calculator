@@ -36,5 +36,38 @@ button {
 }
 
 .fourth {
-    border-bottom: solid #F3DAF7 50px;
+    border-bottom: solid #F3DAF7 25px;
+}
+
+#divide,
+#multiply,
+#add,
+#subtract {
+    background-color: #EEC6DA;
+}
+
+#equals,
+#seven,
+#eight,
+#nine {
+    background-color: #F9E4B1;
+}
+
+#clear,
+#four,
+#five,
+#six {
+    background-color: #C8E4C7;
+}
+
+#zero,
+#one,
+#two,
+#three {
+    background-color: #A2D0E9;
+}
+
+#clear,
+#equals {
+    background-color: #FB8C5B;
 }
