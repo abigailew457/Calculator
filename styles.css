@@ -3,10 +3,15 @@ div {
     flex-direction: column;
 }
 
+.container {
+
+}
+
 .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
 }
 
 button {
@@ -17,7 +22,7 @@ button {
 
 .display {
     align-self: center;
-    width: 396px;
+    width: 400px;
     height: 100px;
     border: solid pink 2px;
 }
