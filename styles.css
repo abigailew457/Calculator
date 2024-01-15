@@ -12,24 +12,29 @@ div {
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    border-left: solid pink 50px;
-    border-right: solid pink 50px;
+    border: solid #F3DAF7 5px;
+    border-left: solid #F3DAF7 50px;
+    border-right: solid #F3DAF7 50px;
+    border-radius: 75px;
+    background-color: #F3DAF7;
 }
 
 button {
     width: 100px;
     height: 100px;
     padding: 0px;
+    border-radius: 50px;
 }
 
 .display {
     align-self: center;
     width: 400px;
     height: 100px;
-    border: solid pink 50px;
-    border-bottom: 0px;
+    border: solid #F3DAF7 50px;
+    border-bottom: solid #F3DAF7 10px;
+    border-radius: 75px;
 }
 
 .fourth {
-    border-bottom: solid pink 50px;
+    border-bottom: solid #F3DAF7 50px;
 }
