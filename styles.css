@@ -15,7 +15,6 @@ div {
     border: solid #F3DAF7 5px;
     border-left: solid #F3DAF7 50px;
     border-right: solid #F3DAF7 50px;
-    border-radius: 75px;
     background-color: #F3DAF7;
 }
 
@@ -41,6 +40,14 @@ button {
 
 .fourth {
     border-bottom: solid #F3DAF7 25px;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+
+.first {
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top: solid #F3DAF7 25px;
 }
 
 #divide,
