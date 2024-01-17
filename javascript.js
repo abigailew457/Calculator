@@ -23,5 +23,14 @@ const display = document.querySelector('.display');
 const sign = document.querySelector('.sign');
 const number = document.querySelector('.number');
 
-const div = document.querySelector('#divide');
-div.onclick = function() { sign.textContent = '÷'; };
+const divideOP = document.querySelector('#divide');
+divideOP.onclick = function() { sign.textContent = '÷'; };
+
+const multiplyOP = document.querySelector('#multiply');
+multiplyOP.onclick = function() { sign.textContent = '×'; };
+
+const addOP = document.querySelector('#add');
+addOP.onclick = function() { sign.textContent = '+'; };
+
+const subOP = document.querySelector('#subtract');
+subOP.onclick = function() { sign.textContent = '−'; };
