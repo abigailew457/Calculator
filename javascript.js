@@ -20,3 +20,4 @@ function operate(operator, num1, num2) {
 }
 
 const div = document.querySelector('#divide');
+div.onclick = () => alert('÷');
