@@ -19,5 +19,7 @@ function operate(operator, num1, num2) {
     };
 }
 
+const display = document.querySelector('.display');
+
 const div = document.querySelector('#divide');
-div.onclick = () => alert('÷');
+div.onclick = function() { display.textContent = '÷'; };
