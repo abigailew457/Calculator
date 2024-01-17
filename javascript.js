@@ -20,6 +20,8 @@ function operate(operator, num1, num2) {
 }
 
 const display = document.querySelector('.display');
+const sign = document.querySelector('.sign');
+const number = document.querySelector('.number');
 
 const div = document.querySelector('#divide');
 div.onclick = function() { display.textContent = '÷'; };
