@@ -24,4 +24,4 @@ const sign = document.querySelector('.sign');
 const number = document.querySelector('.number');
 
 const div = document.querySelector('#divide');
-div.onclick = function() { display.textContent = '÷'; };
+div.onclick = function() { sign.textContent = '÷'; };
