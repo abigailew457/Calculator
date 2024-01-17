@@ -3,10 +3,6 @@ div {
     flex-direction: column;
 }
 
-.container {
-
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -27,6 +23,7 @@ button {
 }
 
 .display {
+    flex-direction: row;
     align-self: center;
     width: 400px;
     height: 100px;
@@ -34,7 +31,6 @@ button {
     border-bottom: solid #F3DAF7 10px;
     border-radius: 75px;
     font-size: xxx-large;
-    text-align: center;
     justify-content: flex-end;
 }
 
