@@ -38,24 +38,34 @@ subOP.onclick = function() { sign.textContent = '−'; };
 
 // nums
 const zero = document.querySelector('#zero');
+zero.onclick = function() { number.textContent = '0';};
 
 const one = document.querySelector('#one');
+one.onclick = function() { number.textContent = '1';};
 
 const two = document.querySelector('#two');
+two.onclick = function() { number.textContent = '2';};
 
 const three = document.querySelector('#three');
+three.onclick = function() { number.textContent = '3';};
 
 const four = document.querySelector('#four');
+four.onclick = function() { number.textContent = '4';};
 
 const five = document.querySelector('#five');
+five.onclick = function() { number.textContent = '5';};
 
 const six = document.querySelector('#six');
+six.onclick = function() { number.textContent = '6';};
 
 const seven = document.querySelector('#seven');
+seven.onclick = function() { number.textContent = '7';};
 
 const eight = document.querySelector('#eight');
+eight.onclick = function() { number.textContent = '8';};
 
 const nine = document.querySelector('#nine');
+nine.onclick = function() { number.textContent = '9';};
 
 
 
