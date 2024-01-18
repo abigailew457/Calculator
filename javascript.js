@@ -36,25 +36,7 @@ addOP.onclick = function() { sign.textContent = '+'; };
 const subOP = document.querySelector('#subtract');
 subOP.onclick = function() { sign.textContent = '−'; };
 
-// second row
-const equals = document.querySelector('#equals');
-
-const seven = document.querySelector('#seven');
-
-const eight = document.querySelector('#eight');
-
-const nine = document.querySelector('#nine');
-
-// thrid row 
-const clear = document.querySelector('#clear');
-
-const four = document.querySelector('#four');
-
-const five = document.querySelector('#five');
-
-const six = document.querySelector('#six');
-
-// fourth row 
+// nums
 const zero = document.querySelector('#zero');
 
 const one = document.querySelector('#one');
@@ -62,3 +44,21 @@ const one = document.querySelector('#one');
 const two = document.querySelector('#two');
 
 const three = document.querySelector('#three');
+
+const four = document.querySelector('#four');
+
+const five = document.querySelector('#five');
+
+const six = document.querySelector('#six');
+
+const seven = document.querySelector('#seven');
+
+const eight = document.querySelector('#eight');
+
+const nine = document.querySelector('#nine');
+
+
+
+// clear and equals will not show up in display 
+const clear = document.querySelector('#clear');
+const equals = document.querySelector('#equals');
