@@ -19,20 +19,43 @@ function operate(operator, num1, num2) {
     };
 }
 
+let adnd = 0;
+let stringNumber = '';
+let isNumber = false;
+let op = 0; 
+
 const display = document.querySelector('.display');
 const sign = document.querySelector('.sign');
 const number = document.querySelector('.number');
 const btns = document.querySelectorAll('button');
 for (const btn of btns) {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function storeVar(x) {
         console.log(this.value);
         if (isNaN(this.value) === false) {
             number.textContent = this.value;
-        } else {sign.textContent = this.value;}
+            stringNumber += this.value;
+            adnd = stringNumber;
+            isNumber = true;
+
+        } else {
+            sign.textContent = this.value;
+            isNumber = false;
+            aug = +stringNumber;
+            stringNumber = ''; 
+            op = this.value;
+            if (this.value === '=') {
+                operate(op, aug, adnd)
+            }; 
+        };
         
     });
 };
 
+function storeVar(x) {
+
+        let amount = x.value;
+        console.log(amount);
+};
 // sign
 const divideOP = document.querySelector('#divide');
 const multiplyOP = document.querySelector('#multiply');
@@ -58,3 +81,13 @@ const equals = document.querySelector('#equals');
 
 // first num = aug
 // second num = adnd
+//if it is a number {
+    //String += input 
+    //number = input 
+    //isNumber = true
+// } 
+// if stringNumber is not empty {
+    //thingToDoMathTo = Int(stringNumber)
+    // operator = input
+    
+//}
