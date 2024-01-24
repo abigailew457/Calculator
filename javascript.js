@@ -32,10 +32,10 @@ for (const btn of btns) {
     btn.addEventListener('click', function storeVar(x) {
         console.log(this.value);
         if (isNaN(this.value) === false) {
-            number.textContent = this.value;
             stringNumber += this.value;
             adnd = stringNumber;
             isNumber = true;
+            number.textContent = adnd;
 
         } else {
             sign.textContent = this.value;
