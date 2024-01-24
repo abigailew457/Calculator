@@ -37,25 +37,21 @@ for (const btn of btns) {
             isNumber = true;
             number.textContent = adnd;
 
-        } else {
+        } else if (isNaN(this.value) === true) {
             sign.textContent = this.value;
             isNumber = false;
             aug = +stringNumber;
             stringNumber = ''; 
             op = this.value;
-            if (this.value === '=') {
+
+        } else if (this.value === '=') {
                 operate(op, aug, adnd)
             }; 
-        };
         
     });
 };
 
-function storeVar(x) {
 
-        let amount = x.value;
-        console.log(amount);
-};
 // sign
 const divideOP = document.querySelector('#divide');
 const multiplyOP = document.querySelector('#multiply');
@@ -78,16 +74,3 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
-
-// first num = aug
-// second num = adnd
-//if it is a number {
-    //String += input 
-    //number = input 
-    //isNumber = true
-// } 
-// if stringNumber is not empty {
-    //thingToDoMathTo = Int(stringNumber)
-    // operator = input
-    
-//}
