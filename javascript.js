@@ -6,13 +6,13 @@ let divide = (a,b) => a/b;
 
 function operate(operator, num1, num2) {
 
-    if (operator == add) {
+    if (operator == '+') {
         return add(num1,num2);
-    } else if (operator == sub) {
+    } else if (operator == '-') {
         return sub(num1,num2);
-    } else if (operator == multiply) {
+    } else if (operator == 'x') {
         return multiply(num1,num2);
-    } else if (operator == divide) {
+    } else if (operator == '÷') {
         return divide(num1,num2);
     } else {
         return(error);
