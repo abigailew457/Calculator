@@ -7,15 +7,19 @@ let divide = (a,b) => a/b;
 function operate(operator, num1, num2) {
 
     if (operator == '+') {
-        return add(num1,num2);
+        console.log(add(num1,num2));
+        number.textContent = add(num1,num2);
     } else if (operator == '-') {
-        return sub(num1,num2);
+        console.log(sub(num1,num2));
+        number.textContent = sub(num1,num2);
     } else if (operator == 'x') {
-        return multiply(num1,num2);
+        console.log(multiply(num1,num2));
+        number.textContent = multiply(num1,num2);
     } else if (operator == '÷') {
-        return divide(num1,num2);
+        console.log(divide(num1,num2));
+        number.textContent = divide(num1,num2);
     } else {
-        return(error);
+        console.log(error);
     };
 }
 
@@ -23,30 +27,32 @@ let adnd = 0;
 let stringNumber = '';
 let isNumber = false;
 let op = 0; 
+let total = 0;
 
 const display = document.querySelector('.display');
 const sign = document.querySelector('.sign');
 const number = document.querySelector('.number');
 const btns = document.querySelectorAll('button');
 for (const btn of btns) {
-    btn.addEventListener('click', function storeVar(x) {
-        console.log(this.value);
+    btn.addEventListener('click', function () {
+        
         if (isNaN(this.value) === false) {
+            console.log(adnd);
             stringNumber += this.value;
             adnd = stringNumber;
             isNumber = true;
             number.textContent = adnd;
 
-        } else if (isNaN(this.value) === true) {
+        } else if (this.value === '=') {
+            operate(op, +aug, +adnd);
+            sign.textContent = '';
+        }  else if (isNaN(this.value) === true) {
             sign.textContent = this.value;
             isNumber = false;
             aug = +stringNumber;
             stringNumber = ''; 
             op = this.value;
-
-        } else if (this.value === '=') {
-                operate(op, aug, adnd)
-            }; 
+        }; 
         
     });
 };
@@ -74,3 +80,6 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
+
+
+// operate needs to display results on screen
