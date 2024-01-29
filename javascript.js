@@ -9,16 +9,19 @@ function operate(operator, num1, num2) {
     if (operator == '+') {
         console.log(add(num1,num2));
         number.textContent = add(num1,num2);
-        aug = add(num1,num2);
+        stringNumber = add(num1,num2);
     } else if (operator == '-') {
         console.log(sub(num1,num2));
         number.textContent = sub(num1,num2);
+        stringNumber = sub(num1,num2);
     } else if (operator == 'x') {
         console.log(multiply(num1,num2));
         number.textContent = multiply(num1,num2);
+        stringNumber = multiply(num1,num2);
     } else if (operator == '÷') {
         console.log(divide(num1,num2));
         number.textContent = divide(num1,num2);
+        stringNumber = divide(num1,num2);
     } else {
         console.log(error);
     };
@@ -61,7 +64,6 @@ for (const btn of btns) {
 
     });
 };
-
 
 
 // sign
