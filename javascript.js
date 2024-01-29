@@ -49,11 +49,11 @@ for (const btn of btns) {
         } else if (this.value === 'clear') {
             number.textContent = '';
             sign.textContent = '';
-            adnd = 0;
+            adnd = null;
             stringNumber = '';
             isNumber = false;
-            op = 0; 
-            aug = 0;
+            op = null; 
+            aug = null;
         } else if (this.value === '=') {
             operate(op, +aug, +adnd);
             sign.textContent = '';
@@ -96,8 +96,3 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
-
-// only works fro plus 
-// 4 - returns -4
-// 3 x returns 0 
-// 3 * returns 0
