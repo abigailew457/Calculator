@@ -31,7 +31,6 @@ let adnd = 0;
 let stringNumber = '';
 let isNumber = false;
 let op = 0; 
-let total = 0;
 let aug = 0;
 
 const display = document.querySelector('.display');
@@ -50,6 +49,11 @@ for (const btn of btns) {
         } else if (this.value === 'clear') {
             number.textContent = '';
             sign.textContent = '';
+            adnd = 0;
+            stringNumber = '';
+            isNumber = false;
+            op = 0; 
+            aug = 0;
         } else if (this.value === '=') {
             operate(op, +aug, +adnd);
             sign.textContent = '';
