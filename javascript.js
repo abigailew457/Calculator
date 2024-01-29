@@ -9,6 +9,7 @@ function operate(operator, num1, num2) {
     if (operator == '+') {
         console.log(add(num1,num2));
         number.textContent = add(num1,num2);
+        aug = add(num1,num2);
     } else if (operator == '-') {
         console.log(sub(num1,num2));
         number.textContent = sub(num1,num2);
@@ -28,6 +29,7 @@ let stringNumber = '';
 let isNumber = false;
 let op = 0; 
 let total = 0;
+let aug = 0;
 
 const display = document.querySelector('.display');
 const sign = document.querySelector('.sign');
@@ -37,25 +39,29 @@ for (const btn of btns) {
     btn.addEventListener('click', function () {
         
         if (isNaN(this.value) === false) {
-            console.log(adnd);
+
             stringNumber += this.value;
             adnd = stringNumber;
             isNumber = true;
             number.textContent = adnd;
-
+        } else if (this.value === 'clear') {
+            number.textContent = '';
+            sign.textContent = '';
         } else if (this.value === '=') {
             operate(op, +aug, +adnd);
             sign.textContent = '';
         }  else if (isNaN(this.value) === true) {
             sign.textContent = this.value;
             isNumber = false;
+            op = this.value;
+            operate(op, +aug, +adnd);
             aug = +stringNumber;
             stringNumber = ''; 
-            op = this.value;
         }; 
-        
+
     });
 };
+
 
 
 // sign
@@ -80,6 +86,3 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
-
-
-// operate needs to display results on screen
