@@ -27,11 +27,11 @@ function operate(operator, num1, num2) {
     };
 }
 
-let adnd = 0;
+let adnd = null;
 let stringNumber = '';
 let isNumber = false;
-let op = 0; 
-let aug = 0;
+let op = null; 
+let aug = null;
 
 const display = document.querySelector('.display');
 const sign = document.querySelector('.sign');
@@ -61,11 +61,15 @@ for (const btn of btns) {
             sign.textContent = this.value;
             isNumber = false;
             op = this.value;
-            operate(op, +aug, +adnd);
-            aug = +stringNumber;
-            stringNumber = ''; 
+            if (aug == null) {
+                aug = +stringNumber;
+                stringNumber = ''; 
+            } else {
+                operate(op, +aug, +adnd);
+                aug = +stringNumber;
+                stringNumber = ''; 
+            }
         }; 
-
     });
 };
 
@@ -92,3 +96,8 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
+
+// only works fro plus 
+// 4 - returns -4
+// 3 x returns 0 
+// 3 * returns 0
