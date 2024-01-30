@@ -8,22 +8,22 @@ function operate(operator, num1, num2) {
 
     if (operator == '+') {
         console.log(add(num1,num2));
-        number.textContent = (add(num1,num2)).toFixed(5);
+        number.textContent = Math.round(add(num1,num2) * 100000) / 100000;
         stringNumber = add(num1,num2);
     } else if (operator == '-') {
         console.log(sub(num1,num2));
-        number.textContent = (sub(num1,num2)).toFixed(5);
+        number.textContent = Math.round(sub(num1,num2) * 100000) / 100000;
         stringNumber = sub(num1,num2);
     } else if (operator == 'x') {
         console.log(multiply(num1,num2));
-        number.textContent = (multiply(num1,num2)).toFixed(5);
+        number.textContent = Math.round(multiply(num1,num2) * 100000) / 100000;
         stringNumber = multiply(num1,num2);
     } else if (operator == '÷' && num2 == 0) {
         number.textContent = "Nah fam";
         stringNumber = '';
     } else if (operator == '÷') {
         console.log(divide(num1,num2));
-        number.textContent = (divide(num1,num2)).toFixed(5);
+        number.textContent = Math.round(divide(num1,num2) * 100000) / 100000;
         stringNumber = divide(num1,num2);
     };
 }
