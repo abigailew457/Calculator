@@ -8,22 +8,20 @@ function operate(operator, num1, num2) {
 
     if (operator == '+') {
         console.log(add(num1,num2));
-        number.textContent = add(num1,num2);
+        number.textContent = (add(num1,num2)).toFixed(5);
         stringNumber = add(num1,num2);
     } else if (operator == '-') {
         console.log(sub(num1,num2));
-        number.textContent = sub(num1,num2);
+        number.textContent = (sub(num1,num2)).toFixed(5);
         stringNumber = sub(num1,num2);
     } else if (operator == 'x') {
         console.log(multiply(num1,num2));
-        number.textContent = multiply(num1,num2);
+        number.textContent = (multiply(num1,num2)).toFixed(5);
         stringNumber = multiply(num1,num2);
     } else if (operator == '÷') {
         console.log(divide(num1,num2));
-        number.textContent = divide(num1,num2);
+        number.textContent = (divide(num1,num2)).toFixed(5);
         stringNumber = divide(num1,num2);
-    } else {
-        console.log(error);
     };
 }
 
@@ -96,3 +94,6 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
+
+
+// display snarky error message if the user tries to divide by 0
