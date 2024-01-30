@@ -18,6 +18,9 @@ function operate(operator, num1, num2) {
         console.log(multiply(num1,num2));
         number.textContent = (multiply(num1,num2)).toFixed(5);
         stringNumber = multiply(num1,num2);
+    } else if (operator == '÷' && num2 == 0) {
+        number.textContent = "Nah fam";
+        stringNumber = '';
     } else if (operator == '÷') {
         console.log(divide(num1,num2));
         number.textContent = (divide(num1,num2)).toFixed(5);
@@ -94,6 +97,3 @@ const nine = document.querySelector('#nine');
 // clear and equals will not show up in display 
 const clear = document.querySelector('#clear');
 const equals = document.querySelector('#equals');
-
-
-// display snarky error message if the user tries to divide by 0
