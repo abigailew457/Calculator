@@ -7,22 +7,18 @@ let divide = (a,b) => a/b;
 function operate(operator, num1, num2) {
 
     if (operator == '+') {
-        console.log(add(num1,num2));
         number.textContent = Math.round(add(num1,num2) * 100000) / 100000;
         stringNumber = add(num1,num2);
     } else if (operator == '-') {
-        console.log(sub(num1,num2));
         number.textContent = Math.round(sub(num1,num2) * 100000) / 100000;
         stringNumber = sub(num1,num2);
     } else if (operator == 'x') {
-        console.log(multiply(num1,num2));
         number.textContent = Math.round(multiply(num1,num2) * 100000) / 100000;
         stringNumber = multiply(num1,num2);
     } else if (operator == '÷' && num2 == 0) {
         number.textContent = "Nah fam";
         stringNumber = '';
     } else if (operator == '÷') {
-        console.log(divide(num1,num2));
         number.textContent = Math.round(divide(num1,num2) * 100000) / 100000;
         stringNumber = divide(num1,num2);
     };
@@ -42,7 +38,6 @@ for (const btn of btns) {
     btn.addEventListener('click', function () {
         
         if (isNaN(this.value) === false) {
-
             stringNumber += this.value;
             adnd = stringNumber;
             isNumber = true;
@@ -73,27 +68,3 @@ for (const btn of btns) {
         }; 
     });
 };
-
-
-// sign
-const divideOP = document.querySelector('#divide');
-const multiplyOP = document.querySelector('#multiply');
-const addOP = document.querySelector('#add');
-const subOP = document.querySelector('#subtract');
-
-// nums
-const zero = document.querySelector('#zero');
-const one = document.querySelector('#one');
-const two = document.querySelector('#two');
-const three = document.querySelector('#three');
-const four = document.querySelector('#four');
-const five = document.querySelector('#five');
-const six = document.querySelector('#six');
-const seven = document.querySelector('#seven');
-const eight = document.querySelector('#eight');
-const nine = document.querySelector('#nine');
-
-
-// clear and equals will not show up in display 
-const clear = document.querySelector('#clear');
-const equals = document.querySelector('#equals');
